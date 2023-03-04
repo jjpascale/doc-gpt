@@ -42,7 +42,7 @@ st.sidebar.image("Img/reading.jpg")
 api_key = st.sidebar.text_input("`OpenAI API Key:`", type="password")
 st.sidebar.write("`By:` [@RLanceMartin](https://twitter.com/RLanceMartin)")
 os.environ["OPENAI_API_KEY"] = api_key
-chunk_chars = st.sidebar.radio("`Choose chunk size for splitting`", (2000, 3000, 4000), index=1)
+chunk_chars = st.sidebar.radio("`Choose chunk size for splitting`", (1000,2000, 3000, 4000), index=1)
 st.sidebar.info("`Larger chunk size can produce better answers, but may high ChatGPT context limit (4096 tokens)`")
 
 # App 
